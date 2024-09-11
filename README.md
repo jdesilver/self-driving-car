@@ -25,28 +25,37 @@ Ensure that you have the following libraries installed:
 pip install tensorflow matplotlib pillow opencv-python gdown
 ```
 Download the YOLOv3 model weights
+```
 wget -O /content/data/yolo_weights.h5 "https://storage.googleapis.com/inspirit-ai-data-bucket-1/Data/AI%20Scholars/Sessions%206%20-%2010%20(Projects)/Project%20-%20%20Object%20Detection%20(Autonomous%20Vehicles)/yolo.h5"
+```
 
 ## Usage
 ### Video Detection
 To detect objects in a video:
+```
 python detect_video.py --video_path /path/to/input/video.mp4 --output_path /path/to/output/video.mp4
+```
 ### Detect Objects in an Image
 To detect objects in an image, use:
+```
 from PIL import Image
 from yolo_detection import detect_image
+
 
 image = Image.open("/path/to/image.jpg")
 output_image = detect_image(image)
 output_image.show()
+```
 ### Video Detection Example
 This example shows how to run object detection on a video file:
+```
 video_path = '/content/data/video2.mp4'
 output_path = '/content/data/video2_detected.mp4'
 detect_video(video_path, output_path)
+```
 
 ## Demo
-Here are sample videos processed by the model:
+Here are sample videos processed by the model:  
 [![Video 1](https://img.youtube.com/vi/sAMlBidtKRI/0.jpg)](https://www.youtube.com/watch?v=sAMlBidtKRI)
 [![Video 2](https://img.youtube.com/vi/PkGtwqF0FxI/0.jpg)](https://www.youtube.com/watch?v=PkGtwqF0FxI)
 [![Video 3](https://img.youtube.com/vi/2DUEGpUEnBA/0.jpg)](https://www.youtube.com/watch?v=2DUEGpUEnBA)
