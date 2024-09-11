@@ -23,6 +23,7 @@ This project demonstrates object detection using YOLO (You Only Look Once) archi
 Ensure that you have the following libraries installed:
 ```bash
 pip install tensorflow matplotlib pillow opencv-python gdown
+```
 Download the YOLOv3 model weights
 wget -O /content/data/yolo_weights.h5 "https://storage.googleapis.com/inspirit-ai-data-bucket-1/Data/AI%20Scholars/Sessions%206%20-%2010%20(Projects)/Project%20-%20%20Object%20Detection%20(Autonomous%20Vehicles)/yolo.h5"
 
