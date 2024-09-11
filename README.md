@@ -65,9 +65,9 @@ Here are sample videos processed by the model:
 To learn more about how this self-driving car object detection app works, check out the [slideshow presentation](https://docs.google.com/presentation/d/1zTy53CTm6GtiTsV2uRTVThwBV0YSon3JduFhuJZmmnE/edit#slide=id.g2e59df2fa02_1_309)
 
 ## Code Structure
-yolo_detection.py: Contains the main object detection logic using YOLO.
-detect_video.py: Script for processing videos and applying object detection.
-utils.py: Contains utility functions for image preprocessing, bounding box manipulation, and IOU calculations.
+yolo_detection.py: Contains the main object detection logic using YOLO.  
+detect_video.py: Script for processing videos and applying object detection.  
+utils.py: Contains utility functions for image preprocessing, bounding box manipulation, and IOU calculations.  
 
 ## Acknowledgements
 This project uses the YOLOv3 architecture for real-time object detection.
